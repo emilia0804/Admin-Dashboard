@@ -15,6 +15,13 @@
     }
 }
 
+:root{
+    --white-color : #fff;
+    --shadow-color: rgb(212, 205, 205);
+    --background-color: #E8EAF6;
+    --sidebar-bg-color: #0D85D8;
+}
+
 body{
     line-height: 1.5;
     font-size: 0.8rem;
@@ -56,7 +63,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .sidebar{
-    background-color:  #0D85D8;
+    background-color:  var(--sidebar-bg-color);
     padding: 15px;
 }
 
@@ -76,7 +83,7 @@ h1,h2,h3,h4,h5,h6{
 
 .sidebar-title .title{
     font-weight: bold;
-    color: #fff;
+    color: var(--white-color);
     margin-bottom: 25px;
 }
 
@@ -91,7 +98,7 @@ ul > li{
 
 ul > li > a{
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     font-weight: bold;
     display: flex;
     gap: 15px;
@@ -101,13 +108,13 @@ ul > li > a{
 .sidebar-icon{
     height: 15px;
     width: 15px;
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 .dashboard-icon{
     height: 25px;
     width: 25px;
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 .icon{
@@ -116,13 +123,13 @@ ul > li > a{
 }
 
 .content{
-    background-color: #E8EAF6;
+    background-color: var(--background-color);
 }
 
 .header{
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 15px;
-    box-shadow: 2px 2px 5px rgb(212, 205, 205);
+    box-shadow: 2px 2px 5px var(--shadow-color);
 }
 
 .profile-icon{
@@ -149,7 +156,7 @@ ul > li > a{
     border-radius: 10px;
     border: none;
     width: 100%;
-    background-color: #E8EAF6 ;
+    background-color: var(--background-color) ;
 }
 
 .profile{
@@ -163,7 +170,7 @@ ul > li > a{
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 70%;
+    width: 65%;
 }
 
 .intro-text{
@@ -186,8 +193,8 @@ button{
     padding: 0 5px;
     border-radius: 10px;
     border: none;
-    background-color: #0D85D8 ;
-    color: white;
+    background-color: var(--sidebar-bg-color) ;
+    color: var(--white-color);
     font-size: 0.7rem;
 }
 
@@ -205,7 +212,7 @@ button{
 }
 
 .card{
-    background-color: #fff;
+    background-color: var(--white-color);
     box-shadow: -8px 0px rgb(232, 166, 25);
     padding: 10px;
     border-radius: 10px;
@@ -228,15 +235,15 @@ button{
 .trending{
     display: grid;
     gap: 10px;
-    background: #fff;
+    background: var(--white-color);
     padding: 10px;
     margin-right: 15px;
-    box-shadow: 2px 2px 5px rgb(212, 205, 205);
+    box-shadow: 2px 2px 5px var(--shadow-color);
     border-radius: 10px;
 }
 
 .announce{
-    border-bottom: 1px solid rgb(185, 181, 181);
+    border-bottom: 1px solid var(--shadow-color);
 }
 
 .trending-content{
